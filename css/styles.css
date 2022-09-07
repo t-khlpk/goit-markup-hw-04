@@ -125,29 +125,7 @@ ul {
   text-decoration: none;
   list-style: none;
 }
-.nav-item::before {
-display: inline-block;
-content: "";
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-background-color: ;
 
-
-}
-.icon-delivery::before {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url('../images/header/envelope.svg');
-  
-}
-.icon-mobile::before {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url('../images/header/smartphone.svg');
-}
 .mail,
 .tel {
     font-weight: 500;
@@ -176,7 +154,16 @@ background-color: ;
   padding-left: 0;
   text-align: center;
     background-color: var(--primary-bghero-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/hero/Img.jpg");
+    background-repeat: no-repeat;
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
+
 .hero-title {
   margin-right: auto;
   margin-left: auto;
@@ -227,31 +214,16 @@ background-color: ;
   justify-content: center;
   gap: 30px;}
 
-.benefits-item::before {
-  display: block;
+.benefits-block {
   width: 270px;
   height: 120px;
-  content: "";
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--primary-section-color);
-  margin: 30px;
-}  
-.benefits-item:nth-child(1)::before{
-  background-image: url('../images/body/antenna.svg');
-  
+  margin-bottom: 30px;
 }
-.benefits-item:nth-child(2)::before{
-  background-image: url('../images/body/clock.svg');
-}
-.benefits-item:nth-child(3)::before{
-  background-image: url('../images/body/diagram.svg');
-}
-.benefits-item:nth-child(4)::before{
-  /* width: 70px;
-  height: 70px; */
-  background-image: url('../images/body/astronaut.svg');
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+  margin:  25px 100px;
 }
 .benefits-title {
   margin-bottom: 10px;
@@ -329,6 +301,15 @@ background-color: ;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color)
+}
+/* .block-icon {
+  width: 44px;
+  height: 44px;
+} */
+.team-icon {
+  width: 20px;
+  height: 20px;
+
 }
 /* footer */
 .footer{
