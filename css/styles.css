@@ -125,6 +125,29 @@ ul {
   text-decoration: none;
   list-style: none;
 }
+.nav-item::before {
+display: inline-block;
+content: "";
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: ;
+
+
+}
+.icon-delivery::before {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url('../images/header/envelope.svg');
+  
+}
+.icon-mobile::before {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url('../images/header/smartphone.svg');
+}
 .mail,
 .tel {
     font-weight: 500;
@@ -204,6 +227,32 @@ ul {
   justify-content: center;
   gap: 30px;}
 
+.benefits-item::before {
+  display: block;
+  width: 270px;
+  height: 120px;
+  content: "";
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--primary-section-color);
+  margin: 30px;
+}  
+.benefits-item:nth-child(1)::before{
+  background-image: url('../images/body/antenna.svg');
+  
+}
+.benefits-item:nth-child(2)::before{
+  background-image: url('../images/body/clock.svg');
+}
+.benefits-item:nth-child(3)::before{
+  background-image: url('../images/body/diagram.svg');
+}
+.benefits-item:nth-child(4)::before{
+  /* width: 70px;
+  height: 70px; */
+  background-image: url('../images/body/astronaut.svg');
+}
 .benefits-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -379,7 +428,7 @@ border: 1px solid transparent;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  border: 1px solid aqua;
+  border: 1px solid #EEEEEE;
   border-top: 0;
 }
 .project-subtitle {
