@@ -333,26 +333,28 @@ margin-right: 10px;
   height: 100%;
   border-radius: 50%;
   color: #AFB1B8;
-  /* background-color: var(--accent-color) */
-  
+  justify-content: center;
+  align-items: center;
+    
 }
 .action-item :focus,
 .action-item :hover {
   background-color: var(--accent-color);
-  fill:  var(--primary-white-color);
+  color:  var(--primary-white-color);
 }
 
 .team-icon {
   width: 20px;
   height: 20px;
-    fill: currentColor;
-    margin-top: 12px;
-  margin-left: 12px;
+  fill: currentColor;
+   
  }
 /* Постійні клієнти */
 .client {
   margin-top: 94px;
   margin-bottom: 94px;
+  display: flex;
+  justify-content: center;
 }
 .client-tittle {
   font-weight: 700;
@@ -370,13 +372,18 @@ color: var(--title-color);
   outline: 1px solid #AFB1B8;
   border-radius: 2%;
   color: #AFB1B8;
+  
 }
+.client-item :hover,
+.client-item :focus {
+   color: var(--accent-color);
+   }
 .client .client-item+ .client-item {
   margin-left: 30px;
 }
 
 .client-icon {
-  width: 106px;
+     width: 106px;
   height: 60px;
   margin: 16px 32px;
   fill: currentColor;
@@ -387,6 +394,7 @@ color: var(--title-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 .footer-logo {
   margin-bottom: 20px;
   display: block;
@@ -429,6 +437,56 @@ text-decoration: none;
 .address-tel:active {
 color:var(--accent-color);
 }
+
+/* footer-icon */
+.footer-subtitle {
+  font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+margin-bottom: 20px;
+}
+.footer .footer-block {
+  display: flex;
+  
+}
+/* .footer-action .footer-action-item+ .footer-action-item {
+  margin-left: 10px;
+  
+} */
+
+.footer-action-item {
+  width: 44px;
+  height: 44px;
+}
+.footer-action-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #42424b;
+  color: var(--primary-white-color);
+  justify-content: center;
+  align-items: center;
+    
+}
+.footer-action-item :focus,
+.footer-action-item :hover {
+  background-color: var(--accent-color);
+  color:  var(--primary-white-color);
+}
+
+.footer-team-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+   
+ }
+
 /* portfolio project */
 .filter{
   display: flex;
