@@ -326,8 +326,8 @@ margin-right: 10px;
   height: 44px;
   list-style: none;
   border-radius: 50%;
-  
-  
+  /* background-color: var(--accent-color);
+   */
 }
 .action-item :focus,
 .action-item :hover {
