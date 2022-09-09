@@ -66,7 +66,8 @@ ul {
 .mail:focus,
 .mail:hover,
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus
+{
   color: var(--accent-color);
 }
 /* header */
@@ -125,7 +126,14 @@ ul {
   text-decoration: none;
   list-style: none;
 }
+.nav-icon {
+margin-right: 10px;
 
+}
+.nav-icon:hover,
+.nav-icon:focus {
+  fill: var(--accent-color);
+}
 .mail,
 .tel {
     font-weight: 500;
@@ -133,6 +141,7 @@ ul {
     letter-spacing: 0.02em;
     color: var(--text-color);
     text-decoration: none;
+   
 
 }
 
@@ -318,13 +327,24 @@ ul {
   list-style: none;
   border-radius: 50%;
   
+  
 }
-
+.action-item :focus,
+.action-item :hover {
+  background-color: var(--accent-color);
+  
+}
+.team-icon:hover,
+.team-icon:focus {
+  fill:  var(--primary-white-color);
+}
+  
 .team-icon {
   width: 20px;
   height: 20px;
   margin-top: 12px;
   margin-left: 12px;
+  fill: #AFB1B8;
 
 }
 /* Постійні клієнти */
