@@ -126,14 +126,17 @@ ul {
   text-decoration: none;
   list-style: none;
 }
+.contacts-header-link {
+  display: flex;
+  align-items: center;
+}
+
 .nav-icon {
 margin-right: 10px;
+fill: currentColor;
 
 }
-.nav-icon:hover,
-.nav-icon:focus {
-  fill: var(--accent-color);
-}
+
 .mail,
 .tel {
     font-weight: 500;
@@ -141,9 +144,7 @@ margin-right: 10px;
     letter-spacing: 0.02em;
     color: var(--text-color);
     text-decoration: none;
-   
-
-}
+ }
 
 .link-activ{
     color: var(--accent-color);
@@ -166,6 +167,7 @@ margin-right: 10px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/hero/Img.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
@@ -224,15 +226,19 @@ margin-right: 10px;
   gap: 30px;}
 
 .benefits-block {
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: var(--primary-section-color);
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4%;
 }
 .benefits-icon {
   width: 70px;
   height: 70px;
-  margin:  25px 100px;
+  
 }
 .benefits-title {
   margin-bottom: 10px;
@@ -298,8 +304,7 @@ margin-right: 10px;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  
-}
+  }
 .team-item {
   margin-bottom: 10px;
   font-weight: 500;
@@ -320,12 +325,10 @@ margin-right: 10px;
 /* block-icon */
 .action {
   display: flex;
-  
-}
+  }
 .action .action-item+ .action-item {
   margin-left: 10px;
-  
-}
+  }
 
 .action-item {
   width: 44px;
@@ -354,12 +357,9 @@ margin-right: 10px;
    
  }
 /* Постійні клієнти */
-.client {
-  margin-top: 94px;
-  margin-bottom: 94px;
-  display: flex;
-  justify-content: center;
-}
+.client-list {
+    display: flex;
+  }
 .client-tittle {
   font-weight: 700;
 font-size: 36px;
@@ -369,20 +369,28 @@ letter-spacing: 0.03em;
 margin-bottom: 50px;
 color: var(--title-color);
 }
-.client-item {display: inline-block;
+.client-item {
   width: 170px;
   height: 92px;
-  list-style: none;
-  outline: 1px solid #AFB1B8;
+    }
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+  border: 1px solid #AFB1B8;
   border-radius: 4px;
   color: #AFB1B8;
   
 }
 
-
-.client-item :hover,
-.client-item :focus {
+.client-link:hover,
+.client-link:focus {
    color: var(--accent-color);
+   border-color: var(--accent-color);
       }
 
 .client .client-item+ .client-item {
@@ -390,9 +398,8 @@ color: var(--title-color);
 }
 
 .client-icon {
-     width: 106px;
+  width: 106px;
   height: 60px;
-  margin: 16px 32px;
   fill: currentColor;
 }
 /* footer */
@@ -529,6 +536,7 @@ color: var(--title-color);
 background: #F5F4FA;
 border-radius: 4px;
 border: 1px solid transparent;
+cursor: pointer;
 }
 .project-list{
   display: flex; 
@@ -545,7 +553,8 @@ border: 1px solid transparent;
 .project-img {
   width: 370px;
 }
-.project-block :hover {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-block {
@@ -566,7 +575,7 @@ color: var(--title-color);
 }
 
 .project-text {
-    font-weight: 400;
+font-weight: 400;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
