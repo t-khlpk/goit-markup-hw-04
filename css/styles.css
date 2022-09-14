@@ -66,7 +66,9 @@ ul {
 .mail:focus,
 .mail:hover,
 .site-nav .link:hover,
-.site-nav .link:focus
+.site-nav .link:focus,
+.contacts-header-link:hover,
+.contacts-header-link:focus
 {
   color: var(--accent-color);
 }
@@ -168,6 +170,7 @@ fill: currentColor;
     url("../images/hero/Img.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
