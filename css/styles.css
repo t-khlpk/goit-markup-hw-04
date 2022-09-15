@@ -162,9 +162,7 @@ fill: currentColor;
 .hero{
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-right: 0;
-  padding-left: 0;
-  text-align: center;
+    text-align: center;
     background-color: var(--primary-bghero-color);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/hero/Img.jpg");
@@ -172,7 +170,6 @@ fill: currentColor;
     background-position: center;
     background-size: cover;
     max-width: 1600px;
-    min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     
@@ -283,6 +280,7 @@ fill: currentColor;
   background-color: var(--primary-section-color) ;
 }
 .section.team .team-list-item {
+  background-color: var(--primary-white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -291,8 +289,7 @@ fill: currentColor;
   padding-bottom: 30px;
   padding-left: 32px;
   padding-right: 32px;
-  background-color: var(--primary-white-color);
-}
+  }
 .team-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -477,8 +474,8 @@ color: #FFFFFF;
 margin-bottom: 20px;
 }
 
-.footer-action-item {
-  display: inline-flex;
+.footer-action {
+  display: flex;
    
   }
   .footer-action .footer-action-item+ .footer-action-item {
@@ -555,6 +552,10 @@ cursor: pointer;
 }
 .project-img {
   width: 370px;
+}
+.project-link {
+  display: block;
+  text-decoration: none;
 }
 .project-link:hover,
 .project-link:focus {
